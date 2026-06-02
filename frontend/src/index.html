@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
+</head>
+<body>
+  <div class="modal__form">
+    <div class="modal__background">
+      <div class="modal__content">
+        <div class="modal__header">Выберите псевдоним:</div>
+        <div class="modal__body">
+            <form class="form__group" action="" >
+                <input class="form__input" type="text" id="name" name="name">
+            </form>
+        </div>
+        <div class="modal__footer">
+          <button class="modal__ok">Продолжить</button>
+          <button class="modal__close">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+	<div id="root">
+    <div class="container">
+      <h1 class="chat__header">Чат</h1>
+      <div class="chat__container">
+        <div class="chat__area">
+          <div class="chat__messages-container">
+            <!-- <div class="message__container message__container-interlocutor">
+              <div class="message__header">Иван</div>
+              <div class="message__text">Привет!</div>
+            </div>
+
+            <div class="message__container message__container-yourself">
+              <div class="message__header">Вы</div>
+              <div class="message__text">Привет, Иван!</div>
+            </div> -->
+          </div>
+
+          <div class="chat__messages-input">
+            <form class="form" action="" method="post">
+              <div class="form__group">
+                <input class="form__input" type="text" name="message" placeholder="Введите сообщение">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="chat__userlist">
+          <!-- <div class="chat__user">Иван</div>
+          <div class="chat__user">Пётр</div>
+          <div class="chat__user">Мария</div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
