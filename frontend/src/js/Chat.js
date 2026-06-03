@@ -13,8 +13,10 @@ export default class Chat {
     this.container = container;
     this.api = new ChatAPI();
     this.websocket = null;
-    this.BASE_URL = "http://localhost:3000";
-    this.WS_URL = "ws://localhost:3000";
+    // this.BASE_URL = "http://localhost:3000";
+    this.BASE_URL = "https://ws1-chat-backend.onrender.com";
+    // this.WS_URL = "ws://localhost:3000";
+    this.WS_URL = "wss://ws1-chat-backend.onrender.com";
   }
 
   init() {
