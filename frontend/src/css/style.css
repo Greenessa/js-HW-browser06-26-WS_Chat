@@ -139,3 +139,12 @@ h1 {
   margin-right: auto;
   text-align: left;
 }
+
+.chat__notification {
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #555555;
+  border-radius: 8px;
+}
