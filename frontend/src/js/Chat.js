@@ -28,11 +28,15 @@ export default class Chat {
   }
 
   init() {
-    document.addEventListener("DOMContentLoaded", (e) => {
-      e.preventDefault();
+    if (document.readyState === "loading") { 
+    document.addEventListener("DOMContentLoaded", () => {
       this.modalEl.classList.add("active");
       this.registerEvents();
     });
+    } else {
+      this.modalEl.classList.add("active");
+      this.registerEvents();
+    }
   }
 
   async createNikName(name) {
